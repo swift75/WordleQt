@@ -4,13 +4,13 @@ import random
 import sqlite3
 from data_colours import COLOURS
 from data import SaveData
-from load_words import load_words
+# from load_words import load_words
 
 
 class GameWindow(QWidget):
     def __init__(self, stacked_widget):
         self.stacked_widget = stacked_widget
-        load_words()
+        #load_words()
         self.words = {}
         self.cur_row = 0
         self.cur_word = ''
